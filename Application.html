@@ -1,0 +1,36 @@
+<HTML>
+	<HEAD>
+		<TITLE>Application</TITLE>
+	</HEAD>
+	<BODY Background="Application_Background.jpeg" Height=100% Width=100% Topmargin=100 Leftmargin=100 Bottommargin=100>
+
+		<H1 Align="Center"><U><B>Name of the Organisation</B></U></H1>
+		<BR><BR><BR><BR><BR>
+		<HR Width="800" Align="Left">
+
+
+		<H3>Create your Leave Application here.</H3>
+		<H4>The fields marked with <FONT Color="Red"><SUP>*</SUP></FONT> are required</H4>
+
+		<P Align="Right">Already submitted application? <A Href="AlreadySubmitted.html">Click here.</A></P>
+		
+		<FORM Action="Preview.php" Method="GET" id="application">
+			<P>Dates<FONT Color="Red"><SUP>*</SUP></FONT> : <BR><BR>From : <INPUT Type="date" Name="fromdate" id="fromdate" Title="Enter the date of start of your Leave." required /><BR><BR>To : <INPUT Type="date" Name="todate" id="todate" Title="When are you planning to come back?" required /></P>
+
+			<P>Subject<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="text" Name="subject" id="subject" Title="Enter the Subject." required /> (keep it short)</P>
+
+			<P>Salutation : <INPUT Type="text" Name="salutation" id="salutation" Title="Sir/Ma'am" /></P>
+
+			<P>Body<FONT Color="Red"><SUP>*</SUP></FONT> : </P>
+			<P><TEXTAREA Name="body" id="body" Rows="3" Cols="80" Title="Enter the body of your application" Spellcheck="true" required></TEXTAREA> (to the point and different reasons in separate lines)</P>
+			<BR><BR>
+			<HR Width="800" Align="Left">
+
+			<P>Reg. No.<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="number" Name="regno" id="regno" Title="Enter your Registration No. again." required /></P>
+			<P>Password<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="password" Name="password" id="password" Title="Enter your password again." required /></P>
+			<HR Width="800" Align="Left">
+			<BR>
+			<P><INPUT Type="submit" Name="submit" id="submit" Title="Click here to submit your application." />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A Href="LogIn.html"><B>Cancel and Logout</B></A></P>
+		</FORM>
+	</BODY>
+</HTML>

@@ -1,0 +1,44 @@
+<HTML>
+	<HEAD>
+		<TITLE>New User Registeration</TITLE>
+	</HEAD>
+	<BODY Background="NewUserRegistration_Background.jpeg" Height=100% Width=100% Topmargin=100 Leftmargin=100 Bottommargin=100>
+
+		<H1 Align="Center"><U><B>Name of the Organisation</B></U></H1>
+		<BR><BR>
+		<HR Width="800" Align="Left">
+		<BR>
+
+
+		<H2><B>New User Registration : </B></H2>
+		<H4>The fields marked with <FONT Color="Red"><SUP>*</SUP></FONT> are required.</H4>
+
+		<FORM Action="Process.php" Method="GET" id="NewUserRegistration">
+			<P>Name<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="text" Name="name" id="name" Title="Enter Your Name here."required /></P>
+
+			<P>Email<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="email" Name="email" id="email" Title="Enter your primary e-mail id."required /> (primary)</P>
+
+			<P>Email : <INPUT Type="email" Name="altemail" id="altemail" Title="Enter your alternate e-mail id."/> (secondary)</P>
+
+			<P>Mobile<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="number" Name="mobile" id="mobile" Title="Enter your contact no." required /></P>
+
+			<P>Date of Birth<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="date" Name="dateofbirth" id="dateofbirth" Title="Enter your Date of Birth." required /></P>
+
+			<P>Address : <INPUT Type="text" Name="address" id="address" Length="50" Title="Enter your address here"/></P>
+
+			<HR Width="800" Align="Left">
+
+			<P>Reg. No.<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="number" Name="regno" id="regno" Title="Enter your Registration No." required /></P>
+
+			<P>UserName<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="text" Name="username" id="username" Title="Enter an unique UserName here." required /></P>
+
+			<P>Password<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="password" Name="password" id="password" Title="Choose a strong password. It should contain atleast a number, symbol, an upperCase alphabet and a lowerCase alphabet." required /></P>
+
+			<P>Confirm Password<FONT Color="Red"><SUP>*</SUP></FONT> : <INPUT Type="password" Name="confirmpassword" id="confirmpassword" Title="Retype the password you entered above." required /></P>
+
+			<HR Width="800" Align="Left">
+			<BR>
+			<P><INPUT Type="submit" Name="submit" id="submit" Value="Submit" Title="Click here to complete the registration process." />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A Href="LogIn.html"><B>Cancel</B></A></P>
+		</FORM>
+	</BODY>
+</HTML>
